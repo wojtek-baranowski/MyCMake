@@ -1,0 +1,3 @@
+/home/wojbar/Repos/MyCMake/build/CMakeFiles/edit_cache.dir
+/home/wojbar/Repos/MyCMake/build/CMakeFiles/rebuild_cache.dir
+/home/wojbar/Repos/MyCMake/build/CMakeFiles/Happy.dir
