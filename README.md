@@ -1,0 +1,2 @@
+# MyCMake
+something to read
