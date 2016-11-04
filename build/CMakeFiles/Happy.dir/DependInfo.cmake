@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/wojbar/Repos/MyCMake/func.cpp" "/home/wojbar/Repos/MyCMake/build/CMakeFiles/Happy.dir/func.cpp.o"
   "/home/wojbar/Repos/MyCMake/suite.cpp" "/home/wojbar/Repos/MyCMake/build/CMakeFiles/Happy.dir/suite.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

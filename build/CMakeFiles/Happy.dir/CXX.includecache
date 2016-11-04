@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/wojbar/Repos/MyCMake/func.cpp
+iostream
+-
+
 /home/wojbar/Repos/MyCMake/suite.cpp
 iostream
 -

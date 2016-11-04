@@ -123,6 +123,33 @@ Happy/fast:
 	$(MAKE) -f CMakeFiles/Happy.dir/build.make CMakeFiles/Happy.dir/build
 .PHONY : Happy/fast
 
+func.o: func.cpp.o
+
+.PHONY : func.o
+
+# target to build an object file
+func.cpp.o:
+	$(MAKE) -f CMakeFiles/Happy.dir/build.make CMakeFiles/Happy.dir/func.cpp.o
+.PHONY : func.cpp.o
+
+func.i: func.cpp.i
+
+.PHONY : func.i
+
+# target to preprocess a source file
+func.cpp.i:
+	$(MAKE) -f CMakeFiles/Happy.dir/build.make CMakeFiles/Happy.dir/func.cpp.i
+.PHONY : func.cpp.i
+
+func.s: func.cpp.s
+
+.PHONY : func.s
+
+# target to generate assembly for a file
+func.cpp.s:
+	$(MAKE) -f CMakeFiles/Happy.dir/build.make CMakeFiles/Happy.dir/func.cpp.s
+.PHONY : func.cpp.s
+
 suite.o: suite.cpp.o
 
 .PHONY : suite.o
@@ -159,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Happy"
+	@echo "... func.o"
+	@echo "... func.i"
+	@echo "... func.s"
 	@echo "... suite.o"
 	@echo "... suite.i"
 	@echo "... suite.s"

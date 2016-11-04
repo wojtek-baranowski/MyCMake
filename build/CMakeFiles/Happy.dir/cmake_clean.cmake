@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Happy.dir/suite.cpp.o"
+  "CMakeFiles/Happy.dir/func.cpp.o"
   "Happy.pdb"
   "Happy"
 )
