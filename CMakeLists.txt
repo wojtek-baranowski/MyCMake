@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.0) #podanie wersji najniszej
-project(FizzBuzz C CXX) #nazwa projektu oraz podajemy jezyki
+cmake_minimum_required(VERSION 3.0)
+project(Factorial C CXX)
 add_executable(tests suite.cpp ) 
 add_library(libframework test_framework.cpp)
 add_library(libfunction func.cpp)
