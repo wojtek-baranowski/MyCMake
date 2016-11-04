@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/tests.dir/suite.cpp.o  -o tests -rdynamic liblibframework.a liblibfunction.a 

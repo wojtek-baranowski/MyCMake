@@ -41,5 +41,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Happy.dir/DependInfo.cmake"
+  "CMakeFiles/libframework.dir/DependInfo.cmake"
+  "CMakeFiles/tests.dir/DependInfo.cmake"
+  "CMakeFiles/libfunction.dir/DependInfo.cmake"
+  "CMakeFiles/fact.dir/DependInfo.cmake"
   )

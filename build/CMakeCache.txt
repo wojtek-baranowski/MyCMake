@@ -171,6 +171,12 @@ FizzBuzz_BINARY_DIR:STATIC=/home/wojbar/Repos/MyCMake/build
 //Value Computed by CMake
 FizzBuzz_SOURCE_DIR:STATIC=/home/wojbar/Repos/MyCMake
 
+//Dependencies for target
+libframework_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+libfunction_LIB_DEPENDS:STATIC=
+
 
 ########################
 # INTERNAL cache entries

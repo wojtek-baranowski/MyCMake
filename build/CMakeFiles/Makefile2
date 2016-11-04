@@ -60,39 +60,152 @@ CMAKE_SOURCE_DIR = /home/wojbar/Repos/MyCMake
 CMAKE_BINARY_DIR = /home/wojbar/Repos/MyCMake/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/Happy.dir
+# Target rules for target CMakeFiles/libframework.dir
 
 # All Build rule for target.
-CMakeFiles/Happy.dir/all:
-	$(MAKE) -f CMakeFiles/Happy.dir/build.make CMakeFiles/Happy.dir/depend
-	$(MAKE) -f CMakeFiles/Happy.dir/build.make CMakeFiles/Happy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wojbar/Repos/MyCMake/build/CMakeFiles --progress-num=1,2,3 "Built target Happy"
-.PHONY : CMakeFiles/Happy.dir/all
+CMakeFiles/libframework.dir/all:
+	$(MAKE) -f CMakeFiles/libframework.dir/build.make CMakeFiles/libframework.dir/depend
+	$(MAKE) -f CMakeFiles/libframework.dir/build.make CMakeFiles/libframework.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wojbar/Repos/MyCMake/build/CMakeFiles --progress-num=3,4 "Built target libframework"
+.PHONY : CMakeFiles/libframework.dir/all
 
 # Include target in all.
-all: CMakeFiles/Happy.dir/all
+all: CMakeFiles/libframework.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Happy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wojbar/Repos/MyCMake/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Happy.dir/all
+CMakeFiles/libframework.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wojbar/Repos/MyCMake/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/libframework.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wojbar/Repos/MyCMake/build/CMakeFiles 0
-.PHONY : CMakeFiles/Happy.dir/rule
+.PHONY : CMakeFiles/libframework.dir/rule
 
 # Convenience name for target.
-Happy: CMakeFiles/Happy.dir/rule
+libframework: CMakeFiles/libframework.dir/rule
 
-.PHONY : Happy
-
-# clean rule for target.
-CMakeFiles/Happy.dir/clean:
-	$(MAKE) -f CMakeFiles/Happy.dir/build.make CMakeFiles/Happy.dir/clean
-.PHONY : CMakeFiles/Happy.dir/clean
+.PHONY : libframework
 
 # clean rule for target.
-clean: CMakeFiles/Happy.dir/clean
+CMakeFiles/libframework.dir/clean:
+	$(MAKE) -f CMakeFiles/libframework.dir/build.make CMakeFiles/libframework.dir/clean
+.PHONY : CMakeFiles/libframework.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/libframework.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tests.dir
+
+# All Build rule for target.
+CMakeFiles/tests.dir/all: CMakeFiles/libframework.dir/all
+CMakeFiles/tests.dir/all: CMakeFiles/libfunction.dir/all
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wojbar/Repos/MyCMake/build/CMakeFiles --progress-num=7,8 "Built target tests"
+.PHONY : CMakeFiles/tests.dir/all
+
+# Include target in all.
+all: CMakeFiles/tests.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wojbar/Repos/MyCMake/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wojbar/Repos/MyCMake/build/CMakeFiles 0
+.PHONY : CMakeFiles/tests.dir/rule
+
+# Convenience name for target.
+tests: CMakeFiles/tests.dir/rule
+
+.PHONY : tests
+
+# clean rule for target.
+CMakeFiles/tests.dir/clean:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/clean
+.PHONY : CMakeFiles/tests.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/tests.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/libfunction.dir
+
+# All Build rule for target.
+CMakeFiles/libfunction.dir/all:
+	$(MAKE) -f CMakeFiles/libfunction.dir/build.make CMakeFiles/libfunction.dir/depend
+	$(MAKE) -f CMakeFiles/libfunction.dir/build.make CMakeFiles/libfunction.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wojbar/Repos/MyCMake/build/CMakeFiles --progress-num=5,6 "Built target libfunction"
+.PHONY : CMakeFiles/libfunction.dir/all
+
+# Include target in all.
+all: CMakeFiles/libfunction.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/libfunction.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wojbar/Repos/MyCMake/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/libfunction.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wojbar/Repos/MyCMake/build/CMakeFiles 0
+.PHONY : CMakeFiles/libfunction.dir/rule
+
+# Convenience name for target.
+libfunction: CMakeFiles/libfunction.dir/rule
+
+.PHONY : libfunction
+
+# clean rule for target.
+CMakeFiles/libfunction.dir/clean:
+	$(MAKE) -f CMakeFiles/libfunction.dir/build.make CMakeFiles/libfunction.dir/clean
+.PHONY : CMakeFiles/libfunction.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/libfunction.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/fact.dir
+
+# All Build rule for target.
+CMakeFiles/fact.dir/all: CMakeFiles/libframework.dir/all
+CMakeFiles/fact.dir/all: CMakeFiles/libfunction.dir/all
+	$(MAKE) -f CMakeFiles/fact.dir/build.make CMakeFiles/fact.dir/depend
+	$(MAKE) -f CMakeFiles/fact.dir/build.make CMakeFiles/fact.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wojbar/Repos/MyCMake/build/CMakeFiles --progress-num=1,2 "Built target fact"
+.PHONY : CMakeFiles/fact.dir/all
+
+# Include target in all.
+all: CMakeFiles/fact.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/fact.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wojbar/Repos/MyCMake/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/fact.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wojbar/Repos/MyCMake/build/CMakeFiles 0
+.PHONY : CMakeFiles/fact.dir/rule
+
+# Convenience name for target.
+fact: CMakeFiles/fact.dir/rule
+
+.PHONY : fact
+
+# clean rule for target.
+CMakeFiles/fact.dir/clean:
+	$(MAKE) -f CMakeFiles/fact.dir/build.make CMakeFiles/fact.dir/clean
+.PHONY : CMakeFiles/fact.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/fact.dir/clean
 
 .PHONY : clean
 

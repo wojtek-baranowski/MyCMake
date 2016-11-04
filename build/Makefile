@@ -111,17 +111,56 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Happy
+# Target rules for targets named libframework
 
 # Build rule for target.
-Happy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Happy
-.PHONY : Happy
+libframework: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libframework
+.PHONY : libframework
 
 # fast build rule for target.
-Happy/fast:
-	$(MAKE) -f CMakeFiles/Happy.dir/build.make CMakeFiles/Happy.dir/build
-.PHONY : Happy/fast
+libframework/fast:
+	$(MAKE) -f CMakeFiles/libframework.dir/build.make CMakeFiles/libframework.dir/build
+.PHONY : libframework/fast
+
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named libfunction
+
+# Build rule for target.
+libfunction: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libfunction
+.PHONY : libfunction
+
+# fast build rule for target.
+libfunction/fast:
+	$(MAKE) -f CMakeFiles/libfunction.dir/build.make CMakeFiles/libfunction.dir/build
+.PHONY : libfunction/fast
+
+#=============================================================================
+# Target rules for targets named fact
+
+# Build rule for target.
+fact: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fact
+.PHONY : fact
+
+# fast build rule for target.
+fact/fast:
+	$(MAKE) -f CMakeFiles/fact.dir/build.make CMakeFiles/fact.dir/build
+.PHONY : fact/fast
 
 func.o: func.cpp.o
 
@@ -129,7 +168,7 @@ func.o: func.cpp.o
 
 # target to build an object file
 func.cpp.o:
-	$(MAKE) -f CMakeFiles/Happy.dir/build.make CMakeFiles/Happy.dir/func.cpp.o
+	$(MAKE) -f CMakeFiles/libfunction.dir/build.make CMakeFiles/libfunction.dir/func.cpp.o
 .PHONY : func.cpp.o
 
 func.i: func.cpp.i
@@ -138,7 +177,7 @@ func.i: func.cpp.i
 
 # target to preprocess a source file
 func.cpp.i:
-	$(MAKE) -f CMakeFiles/Happy.dir/build.make CMakeFiles/Happy.dir/func.cpp.i
+	$(MAKE) -f CMakeFiles/libfunction.dir/build.make CMakeFiles/libfunction.dir/func.cpp.i
 .PHONY : func.cpp.i
 
 func.s: func.cpp.s
@@ -147,8 +186,35 @@ func.s: func.cpp.s
 
 # target to generate assembly for a file
 func.cpp.s:
-	$(MAKE) -f CMakeFiles/Happy.dir/build.make CMakeFiles/Happy.dir/func.cpp.s
+	$(MAKE) -f CMakeFiles/libfunction.dir/build.make CMakeFiles/libfunction.dir/func.cpp.s
 .PHONY : func.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/fact.dir/build.make CMakeFiles/fact.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/fact.dir/build.make CMakeFiles/fact.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/fact.dir/build.make CMakeFiles/fact.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 suite.o: suite.cpp.o
 
@@ -156,7 +222,7 @@ suite.o: suite.cpp.o
 
 # target to build an object file
 suite.cpp.o:
-	$(MAKE) -f CMakeFiles/Happy.dir/build.make CMakeFiles/Happy.dir/suite.cpp.o
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/suite.cpp.o
 .PHONY : suite.cpp.o
 
 suite.i: suite.cpp.i
@@ -165,7 +231,7 @@ suite.i: suite.cpp.i
 
 # target to preprocess a source file
 suite.cpp.i:
-	$(MAKE) -f CMakeFiles/Happy.dir/build.make CMakeFiles/Happy.dir/suite.cpp.i
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/suite.cpp.i
 .PHONY : suite.cpp.i
 
 suite.s: suite.cpp.s
@@ -174,8 +240,35 @@ suite.s: suite.cpp.s
 
 # target to generate assembly for a file
 suite.cpp.s:
-	$(MAKE) -f CMakeFiles/Happy.dir/build.make CMakeFiles/Happy.dir/suite.cpp.s
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/suite.cpp.s
 .PHONY : suite.cpp.s
+
+test_framework.o: test_framework.cpp.o
+
+.PHONY : test_framework.o
+
+# target to build an object file
+test_framework.cpp.o:
+	$(MAKE) -f CMakeFiles/libframework.dir/build.make CMakeFiles/libframework.dir/test_framework.cpp.o
+.PHONY : test_framework.cpp.o
+
+test_framework.i: test_framework.cpp.i
+
+.PHONY : test_framework.i
+
+# target to preprocess a source file
+test_framework.cpp.i:
+	$(MAKE) -f CMakeFiles/libframework.dir/build.make CMakeFiles/libframework.dir/test_framework.cpp.i
+.PHONY : test_framework.cpp.i
+
+test_framework.s: test_framework.cpp.s
+
+.PHONY : test_framework.s
+
+# target to generate assembly for a file
+test_framework.cpp.s:
+	$(MAKE) -f CMakeFiles/libframework.dir/build.make CMakeFiles/libframework.dir/test_framework.cpp.s
+.PHONY : test_framework.cpp.s
 
 # Help Target
 help:
@@ -183,15 +276,24 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... libframework"
 	@echo "... edit_cache"
+	@echo "... tests"
+	@echo "... libfunction"
 	@echo "... rebuild_cache"
-	@echo "... Happy"
+	@echo "... fact"
 	@echo "... func.o"
 	@echo "... func.i"
 	@echo "... func.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... suite.o"
 	@echo "... suite.i"
 	@echo "... suite.s"
+	@echo "... test_framework.o"
+	@echo "... test_framework.i"
+	@echo "... test_framework.s"
 .PHONY : help
 
 

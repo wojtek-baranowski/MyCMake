@@ -1,3 +1,6 @@
+/home/wojbar/Repos/MyCMake/build/CMakeFiles/libframework.dir
 /home/wojbar/Repos/MyCMake/build/CMakeFiles/edit_cache.dir
+/home/wojbar/Repos/MyCMake/build/CMakeFiles/tests.dir
+/home/wojbar/Repos/MyCMake/build/CMakeFiles/libfunction.dir
 /home/wojbar/Repos/MyCMake/build/CMakeFiles/rebuild_cache.dir
-/home/wojbar/Repos/MyCMake/build/CMakeFiles/Happy.dir
+/home/wojbar/Repos/MyCMake/build/CMakeFiles/fact.dir
