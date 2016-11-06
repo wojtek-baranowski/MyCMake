@@ -100,8 +100,8 @@ clean: CMakeFiles/libframework.dir/clean
 # Target rules for target CMakeFiles/tests.dir
 
 # All Build rule for target.
-CMakeFiles/tests.dir/all: CMakeFiles/libframework.dir/all
 CMakeFiles/tests.dir/all: CMakeFiles/libfunction.dir/all
+CMakeFiles/tests.dir/all: CMakeFiles/libframework.dir/all
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wojbar/Repos/MyCMake/build/CMakeFiles --progress-num=7,8 "Built target tests"
@@ -175,8 +175,8 @@ clean: CMakeFiles/libfunction.dir/clean
 # Target rules for target CMakeFiles/fact.dir
 
 # All Build rule for target.
-CMakeFiles/fact.dir/all: CMakeFiles/libframework.dir/all
 CMakeFiles/fact.dir/all: CMakeFiles/libfunction.dir/all
+CMakeFiles/fact.dir/all: CMakeFiles/libframework.dir/all
 	$(MAKE) -f CMakeFiles/fact.dir/build.make CMakeFiles/fact.dir/depend
 	$(MAKE) -f CMakeFiles/fact.dir/build.make CMakeFiles/fact.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wojbar/Repos/MyCMake/build/CMakeFiles --progress-num=1,2 "Built target fact"
